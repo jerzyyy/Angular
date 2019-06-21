@@ -1,0 +1,12 @@
+<p [hidden]="isHidden" [style.color]="color">
+  Hello {{prenom}} {{nom}}
+</p>
+<p>
+  {{getFullName()}}
+</p>
+<p *ngIf="isDisplay">
+  {{formation.name}} {{formation.description}}
+</p>
+<p [hidden]="isHidden" (mouseover)="mouse()" (mouseout)="mouseO()">Optional : {{formationJs?.name}}</p>
+<p>Mock</p>
+<button (click)="onClick()">Click me</button>
