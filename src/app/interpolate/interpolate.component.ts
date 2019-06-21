@@ -13,7 +13,7 @@ export class InterpolateComponent implements OnInit {
   nom: string = "Yengo"
   formation: object = new Formation("Javascript", "I have the key of my success!!")
   formationJs: Formation;
-  isHidden: boolean = false;
+  isHidden: boolean = true;
   color: string = "red";
   isDisplay: boolean = true;
 
@@ -23,8 +23,8 @@ export class InterpolateComponent implements OnInit {
     }, 3000)
     setInterval(() => {
       //this.isHidden = !this.isHidden;
-      this.color = this.color === "red" ? "yellow" : "red"
-      this.isDisplay = !this.isDisplay
+      //this.color = this.color === "red" ? "yellow" : "red"
+      //this.isDisplay = !this.isDisplay
     }, 1000)
   }
 
